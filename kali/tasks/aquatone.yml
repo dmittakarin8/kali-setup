@@ -1,0 +1,13 @@
+#- name: Bloodhound.py 
+#  hosts: all
+#  become: yes
+---
+- name: Aquatone clone repo
+  git:
+    repo: https://github.com/michenriksen/aquatone.git
+    dest: "/opt/aquatone"
+- name: download aquatone release binary
+  get_url:
+    url: "{{ aquatone_release_url }}"
+    dest: /opt/aquatone
+    mode: '0655'

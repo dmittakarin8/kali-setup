@@ -1,0 +1,4 @@
+/vars/credentials.yml
+/.vagrant/
+/Vagrantfile-full
+/Pipfile*

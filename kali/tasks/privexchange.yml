@@ -1,0 +1,5 @@
+---    
+- name: Privexchange clone repo
+  git:
+    repo: https://github.com/dirkjanm/PrivExchange
+    dest: "/opt/privexchange"

@@ -1,0 +1,10 @@
+---
+- name: Impacket clone repo
+  git:
+    repo: https://github.com/SecureAuthCorp/impacket
+    dest: "/opt/impacket"
+- name: Install impacket 
+  shell: |
+    pipenv run python3 setup.py install
+  args: 
+    chdir: "/opt/impacket"

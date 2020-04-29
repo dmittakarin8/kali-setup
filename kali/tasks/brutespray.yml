@@ -1,0 +1,10 @@
+---
+- name: BruteSpray clone repo
+  git:
+    repo: https://github.com/x90skysn3k/brutespray.git
+    dest: "/opt/brutespray"
+- name: Install brutespray 
+  shell: |
+    pipenv install -r requirements.txt
+  args: 
+    chdir: "/opt/brutespray"

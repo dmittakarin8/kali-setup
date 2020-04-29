@@ -1,0 +1,31 @@
+---
+#- name: CrackMapExec
+#hosts: all
+#become: yes
+#  tasks:
+- name: CME install core deps
+  apt:
+   name:
+     - libssl-dev
+     - libffi-dev
+     - python-dev
+     - build-essential
+   state: present
+  become_user: root
+- name: CME clone repo
+  git:
+    repo: https://github.com/byt3bl33d3r/crackmapexec
+    recursive: yes
+    dest: "/opt/crackmapexec"
+  become_user: root
+- name: Install Crackmapexec
+  shell: |
+    pipenv install 
+    pipenv run python3 setup.py install
+  args: 
+    chdir: "/opt/crackmapexec"
+#  command: "pip install --user pipenv" 
+#- name: Run pipenv install
+#  command: "pipenv install"
+#  args:
+#    chdir: "/opt/crackmapexec"

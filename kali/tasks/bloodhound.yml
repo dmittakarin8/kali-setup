@@ -1,0 +1,10 @@
+---
+- name: Bloodhound.py clone repo
+  git:
+    repo: https://github.com/fox-it/BloodHound.py.git
+    dest: "/opt/bloodhound"
+- name: Install bloodhound 
+  shell: |
+    pipenv run python3 setup.py install
+  args: 
+    chdir: "/opt/bloodhound"

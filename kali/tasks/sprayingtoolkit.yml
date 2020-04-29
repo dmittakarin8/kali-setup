@@ -1,0 +1,7 @@
+---    
+- name: Sprayingtoolkit install core deps
+  apt: name=python3 state=present
+- name: Sprayingtoolkit clone repo
+  git:
+    repo: https://github.com/byt3bl33d3r/SprayingToolkit
+    dest: "/opt/sprayingtoolkit"

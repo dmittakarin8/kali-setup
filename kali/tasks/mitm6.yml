@@ -1,0 +1,10 @@
+---    
+- name: MITM6 clone repo
+  git:
+    repo: https://github.com/fox-it/mitm6
+    dest: "/opt/mitm6"
+- name: Install impacket 
+  shell: |
+    pipenv install -r requirements.txt
+  args: 
+    chdir: "/opt/mitm6"

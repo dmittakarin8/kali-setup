@@ -1,0 +1,5 @@
+---    
+- name: Responder clone repo
+  git:
+    repo: https://github.com/lgandx/Responder
+    dest: "/opt/responder"

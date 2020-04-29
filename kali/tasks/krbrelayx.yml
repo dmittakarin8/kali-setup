@@ -1,0 +1,5 @@
+---
+- name: KRBRelayx clone repo
+  git:
+    repo: https://github.com/dirkjanm/krbrelayx
+    dest: "/opt/krbrelayx"

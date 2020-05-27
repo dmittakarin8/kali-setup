@@ -1,0 +1,13 @@
+- name: download powerview 
+    get_url:
+      url: "{{ powerview_url }}"
+      dest: /opt
+- name: download DomainPasswordSpray 
+    get_url:
+      url: "{{ domainpasswordspray_url }}"
+      dest: /opt
+- name: download SharpHound 
+    get_url:
+      url: "{{ sharphound_url }}"
+      dest: /opt
+

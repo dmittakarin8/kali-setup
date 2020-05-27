@@ -8,3 +8,14 @@ aquatone_release_url: https://github.com/michenriksen/aquatone/releases/download
 
 # virtualbox
 vb_guest_additions_url: https://download.virtualbox.org/virtualbox/6.1.6/VBoxGuestAdditions_6.1.6.iso
+
+# Powerview 
+powerview_url: https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/dev/Recon/PowerView.ps1
+
+# SharpHound 
+sharphound_url: https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Ingestors/SharpHound.ps1
+
+# DomainPasswordSpray 
+domainpasswordpsray_url: https://raw.githubusercontent.com/dafthack/DomainPasswordSpray/master/DomainPasswordSpray.ps1
+
+

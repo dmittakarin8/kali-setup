@@ -55,6 +55,7 @@
     - import_tasks: tasks/responder.yml
     - import_tasks: tasks/sprayingtoolkit.yml
     - import_tasks: tasks/spray.yml
+    - import_tasks: tasks/powershell.yml
 #  - name: Install python3-pip
 #    apt: name=python-pip state=present
 #  - name: Install pipenv

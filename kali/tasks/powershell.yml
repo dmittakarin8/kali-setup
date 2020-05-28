@@ -1,14 +1,14 @@
 ---
 - name: download powerview 
   get_url:
-    url: "{{ powerview_url }}"
+    url: "https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/dev/Recon/PowerView.ps1"
     dest: /opt
 - name: download DomainPasswordSpray 
   get_url:
-    url: "{{ domainpasswordspray_url }}"
+    url: "https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Ingestors/SharpHound.ps1"
     dest: /opt
 - name: download SharpHound 
   get_url:
-    url: "{{ sharphound_url }}"
+    url: "https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Ingestors/SharpHound.ps1"
     dest: /opt
 

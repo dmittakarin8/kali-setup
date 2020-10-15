@@ -18,10 +18,17 @@
     recursive: yes
     dest: "/opt/crackmapexec"
   become_user: root
-- name: Install Crackmapexec
+- name: Install Poetry 
   shell: |
-    pipenv install 
-    pipenv run python3 setup.py install
+    curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+  args: 
+    chdir: "/opt/crackmapexec"
+    warn: no
+- name: Install CME 
+  environment:
+    PATH: "{{ ansible_env.HOME }}/.poetry/bin:{{ ansible_env.PATH }}"
+  shell: |
+    poetry install 
   args: 
     chdir: "/opt/crackmapexec"
 #  command: "pip install --user pipenv" 

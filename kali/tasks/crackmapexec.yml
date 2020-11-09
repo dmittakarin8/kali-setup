@@ -28,7 +28,7 @@
   environment:
     PATH: "{{ ansible_env.HOME }}/.poetry/bin:{{ ansible_env.PATH }}"
   shell: |
-    poetry install 
+    ~/.poetry/bin/poetry install 
   args: 
     chdir: "/opt/crackmapexec"
 #  command: "pip install --user pipenv" 

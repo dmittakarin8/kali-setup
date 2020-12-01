@@ -5,7 +5,7 @@
     dest: /opt
 - name: download DomainPasswordSpray 
   get_url:
-    url: "https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Ingestors/SharpHound.ps1"
+    url: "https://raw.githubusercontent.com/dafthack/DomainPasswordSpray/master/DomainPasswordSpray.ps1"
     dest: /opt
 - name: download SharpHound 
   get_url:

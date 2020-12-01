@@ -9,3 +9,8 @@ aquatone_release_url: https://github.com/michenriksen/aquatone/releases/download
 # virtualbox
 vb_guest_additions_url: https://download.virtualbox.org/virtualbox/6.1.16/VBoxGuestAdditions_6.1.16.iso
 
+# bashrc 
+bashrc_url: https://github.com/dmittakarin8/kali-setup/.bashrc
+
+
+

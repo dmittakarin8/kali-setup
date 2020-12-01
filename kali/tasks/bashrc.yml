@@ -1,0 +1,6 @@
+---
+- name: download .bashrc 
+    get_url:
+      url: "{{ bashrc_url }}"
+      dest: /opt
+      mode: '0655'

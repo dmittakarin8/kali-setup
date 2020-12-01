@@ -8,3 +8,6 @@
     pipenv run python3 setup.py install
   args: 
     chdir: "/opt/impacket"
+- name: CME Docker pull - impacket
+  shell: |
+    docker pull rflathers/impacket
